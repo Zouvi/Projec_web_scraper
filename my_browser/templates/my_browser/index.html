@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hledání na Google</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="search_query" placeholder="Zadejte hledané slovo">
+        <button type="submit">Stáhni soubor</button>
+    </form>
+</body>
+</html>

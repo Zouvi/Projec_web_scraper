@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Výsledky hledání</title>
+</head>
+<body>
+    {% for result in results %}
+        <a href="{{ result.link }}">{{ result.title }}</a><br>
+        {{ result.description }}<br>
+    {% endfor %}
+</body>
+</html>
